@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Calculate factorial of a number
+read -p "Enter a number: " num
+
+factorial=1
+
+for ((i=1; i<=num; i++))
+do
+    factorial=$((factorial * i))
+done
+
+echo "Factorial = $factorial"
+
+# Example:
+# Enter a number: 5
+# Factorial = 120
